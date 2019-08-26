@@ -19,7 +19,7 @@ public class Test7 {
             //创建压缩文件
             ZipFile zipFile = new ZipFile("D:/test.zip");
             ArrayList<File> files = new ArrayList<>();
-            files.add(new File("D:/小田.jpg"));
+            files.add(new File("D:/111.jpg"));
 
             //设置压缩文件参数
             ZipParameters parameters = new ZipParameters();
@@ -51,7 +51,7 @@ public class Test7 {
             
             FileInputStream fis;
 			try {
-				fis = new FileInputStream(new File("D:/小田.jpg"));
+				fis = new FileInputStream(new File("D:/111.jpg"));
 				zipFile.addStream(fis, parameters);
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
