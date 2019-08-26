@@ -51,5 +51,6 @@ public class TestQrcode {
 	
 	//-----------
 	//remote
+	//local
 	
 }
