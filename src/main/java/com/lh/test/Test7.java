@@ -51,7 +51,7 @@ public class Test7 {
             
             FileInputStream fis;
 			try {
-				fis = new FileInputStream(new File("D:/111.jpg"));
+				fis = new FileInputStream(new File("D:/1111.jpg"));
 				zipFile.addStream(fis, parameters);
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
