@@ -49,6 +49,6 @@ public class TestQrcode {
 	    
 	}
 	
-	
+	//===========000
 	
 }
