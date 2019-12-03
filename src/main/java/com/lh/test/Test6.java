@@ -18,7 +18,7 @@ public class Test6 {
 //		ThreadUtil.newExecutor();
 	
 	// online test aa
-	// online test  11
+	// online test  11 bb
 		
 		ConcurrentHashMap<String, String> map = new ConcurrentHashMap<String, String>();
 		System.out.println(map.put("1", "1"));
