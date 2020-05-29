@@ -25,6 +25,7 @@ public class TestQrcode {
 	    String barcodePath = "D://qrcode2.jpg"; //图片地址
 	    try {
         	image = ImageIO.read(new File(barcodePath));
+        	
         	if (image != null) {
         		LuminanceSource source = new BufferedImageLuminanceSource(image);
         		Binarizer binarizer = new HybridBinarizer(source);
@@ -36,9 +37,17 @@ public class TestQrcode {
         		if (null != result){
         			ResultPoint[] points = result.getResultPoints();
         			System.out.println(points.length);
-        			System.out.println(points[0]);//取bottomleft位置
-        			System.out.println(points[1]);//取topleft位置
-        			System.out.println(points[2]);//取topright位置
+        			System.out.println(points[0]);//取bottomLeft位置
+        			System.out.println(points[1]);//取topLeft位置
+        			System.out.println(points[2]);//取topRight位置
+        			
+//        			System.out.println(points[0].getY());//取bottomLeft位置
+//        			System.out.println(points[1].getY());//取topLeft位置
+//        			System.out.println(points[2].getY());//取topRight位置
+//        			
+//        			System.out.println(points[0].getX());//取bottomLeft位置
+//        			System.out.println(points[1].getX());//取topLeft位置
+//        			System.out.println(points[2].getX());//取topRight位置
         		}
     		} else {
     			System.out.println("the decode image may be not exit.");

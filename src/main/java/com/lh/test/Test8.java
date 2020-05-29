@@ -1,27 +1,18 @@
 package com.lh.test;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
+import java.math.RoundingMode;
 import java.util.List;
 
-import org.apache.commons.lang.StringUtils;
 
-import com.google.common.base.CaseFormat;
-
-import net.lingala.zip4j.core.ZipFile;
-import net.lingala.zip4j.exception.ZipException;
-import net.lingala.zip4j.model.ZipParameters;
-import net.lingala.zip4j.util.Zip4jConstants;
+import cn.hutool.core.lang.Console;
+import cn.hutool.core.util.ReUtil;
+import cn.hutool.http.HttpUtil;
 
 public class Test8 {
 
+	public byte bySupport;
+	
 	public static void main(String[] args) {
 		
 //		
@@ -66,23 +57,69 @@ public class Test8 {
 //		testlet_range = min_num+"-"+max_num;
 //		System.out.println(testlet_range);
 		
-		String topic = "";
+//		String topic = "";
+//		
+//		switch("bbb"){//从匹配项开始往下执行，如果没有break的话，则一直执行到最后
+//			case "aaa":
+//				System.out.println("aaa");
+//				break;
+//			case "bbb":
+//				System.out.println("bbb");
+//				break;
+//			case "ccc":
+//				System.out.println("ccc");
+//				break;
+//			default:
+//				break;
+//		}
 		
-		switch("bbb"){//从匹配项开始往下执行，如果没有break的话，则一直执行到最后
-			case "aaa":
-				System.out.println("aaa");
-				break;
-			case "bbb":
-				System.out.println("bbb");
-				break;
-			case "ccc":
-				System.out.println("ccc");
-				break;
-			default:
-				break;
-		}
+//		System.out.println(Integer.parseInt("-1"));
 		
 		
+//		long ip= NetUtil.ipv4ToLong("192.168.0.100");
+//		System.out.println(ip);
+//		System.out.println(NetUtil.longToIpv4(ip));
+//		System.out.println(NetUtil.getUsableLocalPort(20000));
+		
+//		System.out.println(ZipUtil.zlib("我爱你中国", CharsetUtil.UTF_8, 9));
+		
+		
+//		//请求列表页
+//		String listContent = HttpUtil.get("https://www.oschina.net/action/ajax/get_more_news_list?newsType=&p=2");
+//		System.out.println(listContent);
+//		//使用正则获取所有标题
+//		List<String> titles = ReUtil.findAll("<span class=\"text-ellipsis\">(.*?)</span>", listContent, 1);
+//		for (String title : titles) {
+//		    //打印标题
+//		    Console.log(title);
+//		}
+		
+//		Integer type = 4;
+//		System.out.println(4 == type);
+				
+//		String exception_states = "0";
+//		String exception_state = exception_states.substring(exception_states.lastIndexOf(",")+1,exception_states.length());
+//		System.out.println(exception_state);
+		
+//		BigDecimal crowedCoefficient = new BigDecimal(1).divide(new BigDecimal(23), 1, RoundingMode.HALF_UP);
+//		System.out.println(crowedCoefficient);
+		
+//		String file_path ="abc_123";
+//		file_path = file_path.replaceFirst("abc", "");
+//		System.out.println(file_path);
+		
+		int exam_duration = (int)Math.ceil(2/10) * 463;
+		System.out.println(exam_duration);
+		System.out.println(Math.ceil(2/10));
+		float  a = (float)2/10;
+//		float num= (float)2/3;
+		System.out.println(a);
+		
+		int num = new BigDecimal("0").divide(new BigDecimal("10"),BigDecimal.ROUND_CEILING).intValue();
+		System.out.println(num);
+		System.out.println("-------");
+		
+		System.out.println(new Test8().bySupport);
 	}
 
 
